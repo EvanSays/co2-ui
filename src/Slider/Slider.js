@@ -13,6 +13,19 @@ class VolumeSlider extends Component {
       value4: 25,
       reverseValue: 8
     }
+    this.handleValue1 = this.handleValue1.bind(this)
+    this.handleValue2 = this.handleValue2.bind(this)
+    this.handleValue3 = this.handleValue3.bind(this)
+    this.handleValue4 = this.handleValue4.bind(this)
+  }
+
+  componentDidMount() {
+    setInterval(() => {
+      this.handleValue1(Math.floor(Math.random() * Math.floor(100)))
+      this.handleValue2(Math.floor(Math.random() * Math.floor(100)))
+      this.handleValue3(Math.floor(Math.random() * Math.floor(100)))
+      this.handleValue4(Math.floor(Math.random() * Math.floor(100)))
+    }, 1000);
   }
 
   handleValue1 = (value) => {
@@ -84,7 +97,7 @@ class VolumeSlider extends Component {
             />
             <div className='value'>{value4}</div>
           </div>
-         
+
         </div>
       </div>
     )
