@@ -1,9 +1,11 @@
 Clone repo
 
-on BB, install newest node. 
+on BB, install newest node and git. 
 ```
 sudo node update
+sudo apt install git-all
 ```
+
 
 in repo folder
 ```
