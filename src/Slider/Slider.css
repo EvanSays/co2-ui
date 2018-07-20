@@ -1,0 +1,9 @@
+.slider-group{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.slider-vertical {
+  margin: 75px;
+}
